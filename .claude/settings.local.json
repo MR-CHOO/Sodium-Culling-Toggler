@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /tmp/sodium-extract)",
+      "Read(//tmp/**)",
+      "Bash(unzip -o ~/.gradle/caches/modules-2/files-2.1/maven.modrinth/sodium/mc1.21.1-0.6.13-fabric/928a2598178c3a58b0638bab842f467d2e49251a/sodium-mc1.21.1-0.6.13-fabric.jar -d sodium-jar)",
+      "Bash(gh api *)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/viewport/Viewport.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/SodiumWorldRenderer.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/chunk/RenderSectionManager.java\")",
+      "Bash(find /tmp/sodium -name \"*.java\" -type f -exec grep -l \"new Viewport\" {} \\\\;)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/mixin/core/render/frustum/FrustumMixin.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/viewport/frustum/SimpleFrustum.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/mixin/core/render/world/FrustumAccessor.java\")",
+      "Bash(grep -rn 'sodium$createViewport\\\\|ViewportProvider' /tmp/sodium/common/src/main/java/net/caffeinemc/mods/sodium/)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/mixin/core/render/world/LevelRendererMixin.java\")",
+      "Bash(grep -B 10 -A 15 'sodium$createViewport')",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/chunk/occlusion/OcclusionCuller.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/viewport/CameraTransform.java\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/CaffeineMC/sodium/dev/common/src/main/java/net/caffeinemc/mods/sodium/client/render/chunk/map/ChunkTracker.java\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(javap -p net/caffeinemc/mods/sodium/client/render/viewport/frustum/Frustum.class net/caffeinemc/mods/sodium/client/render/viewport/Viewport.class)",
+      "Bash(xargs -I{} sh -c \"javap -p -c {} 2>/dev/null | grep -l -i 'GameTime\\\\|u_GameTime' >/dev/null && echo {}\")",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:modrinth.com)",
+      "Read(//c/Users/User/AppData/Roaming/.minecraft/resourcepacks/Recrafted/assets/minecraft/shaders/post/dnaa/**)",
+      "Read(//c/Users/User/AppData/Roaming/.minecraft/resourcepacks/Recrafted/assets/minecraft/shaders/post/rays/**)",
+      "WebSearch"
+    ]
+  }
+}
