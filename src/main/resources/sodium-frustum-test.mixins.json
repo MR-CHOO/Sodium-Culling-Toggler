@@ -3,7 +3,8 @@
   "package": "com.shadowculling.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "ViewportMixin"
+    "ViewportMixin",
+    "DefaultChunkRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
