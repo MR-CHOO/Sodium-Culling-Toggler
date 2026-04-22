@@ -1,4 +1,4 @@
-# Sodium Frustum Test
+# Sodium Culling Toggler
 
 ## Setup
 
