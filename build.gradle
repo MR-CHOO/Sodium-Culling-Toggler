@@ -34,6 +34,7 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Sodium - as a dependency we compile against but don't bundle
     modCompileOnly "maven.modrinth:sodium:mc1.21.1-0.6.13-fabric"

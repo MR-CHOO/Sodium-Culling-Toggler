@@ -1,5 +1,6 @@
 package com.shadowculling.mixin;
 
+import com.shadowculling.CullingConfig;
 import net.caffeinemc.mods.sodium.client.render.chunk.DefaultChunkRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,6 +16,6 @@ public class DefaultChunkRendererMixin {
         ordinal = 0
     )
     private static boolean shadowculling$disableBlockFaceCulling(boolean useBlockFaceCulling) {
-        return false;
+        return CullingConfig.disableBackfaceCulling ? false : useBlockFaceCulling;
     }
 }
