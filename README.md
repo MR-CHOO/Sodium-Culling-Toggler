@@ -2,7 +2,13 @@
 
 ## Setup
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+Allows Resourcepacks to disable Sodium's frustum and backface culling via namespace/assets/sodiumcoreshadersupport/versions.json
+
+{
+  "supported-versions": { "1.21.11": ["0.8.7+mc1.21.11"] },
+  "disable-frustum-culling": true,
+  "disable-backface-culling": true
+}
 
 ## License
 
