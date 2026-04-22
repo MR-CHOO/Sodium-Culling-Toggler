@@ -11,3 +11,5 @@ Allows Resourcepacks to disable Sodium's frustum and backface culling via namesp
   "disable-backface-culling": true
 }
 ```
+
+(Mod needs some mild internal cleanup with renaming from older indev namespaces)
